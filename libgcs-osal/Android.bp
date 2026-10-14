@@ -1,0 +1,26 @@
+// Copyright (C) The LineageOS Project
+
+// SPDX-License-Identifier: Apache-2.0
+
+cc_library_shared {
+    name: "libgcs-osal",
+
+    vendor: true,
+    compile_multilib: "32",
+
+    srcs: [
+        "libgcs-osal.c",
+    ],
+
+    shared_libs: [
+        "liblog",
+    ],
+
+    cflags: [
+        "-Wall",
+        "-Wextra",
+        "-fvisibility=hidden",
+    ],
+
+    stl: "none",
+}

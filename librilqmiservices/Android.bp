@@ -1,0 +1,26 @@
+// Copyright (C) The LineageOS Project
+
+// SPDX-License-Identifier: Apache-2.0
+
+cc_library_shared {
+    name: "librilqmiservices",
+
+    vendor: true,
+    compile_multilib: "64",
+
+    srcs: [
+        "librilqmiservices.c",
+    ],
+
+    shared_libs: [
+        "libqmi_common_so",
+    ],
+
+    cflags: [
+        "-Wall",
+        "-Wextra",
+        "-fvisibility=hidden",
+    ],
+
+    stl: "none",
+}

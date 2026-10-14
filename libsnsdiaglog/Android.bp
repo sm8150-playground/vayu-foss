@@ -1,0 +1,45 @@
+// Copyright (C) The LineageOS Project
+
+// SPDX-License-Identifier: Apache-2.0
+
+cc_library_shared {
+    name: "libsnsdiaglog",
+
+    vendor: true,
+    compile_multilib: "64",
+
+    srcs: [
+        "libsnsdiaglog.cpp",
+    ],
+
+    local_include_dirs: [
+        "include",
+    ],
+
+    cflags: [
+        "-Wall",
+        "-Wextra",
+        "-fvisibility=hidden",
+    ],
+
+    shared_libs: [
+        "libdiag",
+        "liblog",
+        "libsensorslog",
+        "libutils",
+
+
+
+
+
+
+
+        "libc++_shared",
+    ],
+
+
+
+
+
+    stl: "none",
+}

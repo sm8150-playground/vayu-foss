@@ -1,0 +1,30 @@
+// Copyright (C) The LineageOS Project
+
+// SPDX-License-Identifier: Apache-2.0
+
+cc_library_shared {
+    name: "libtime_genoff",
+
+    vendor: true,
+    compile_multilib: "64",
+
+    srcs: [
+        "time_genoff.c",
+    ],
+
+    local_include_dirs: [
+        "include",
+    ],
+
+    shared_libs: [
+        "liblog",
+    ],
+
+    cflags: [
+        "-Wall",
+        "-Wextra",
+        "-fvisibility=hidden",
+    ],
+
+    stl: "none",
+}

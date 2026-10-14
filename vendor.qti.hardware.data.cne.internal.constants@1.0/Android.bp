@@ -1,0 +1,22 @@
+// Copyright (C) The LineageOS Project
+
+// SPDX-License-Identifier: Apache-2.0
+
+cc_library_shared {
+    name: "vendor.qti.hardware.data.cne.internal.constants@1.0",
+
+    vendor: true,
+    compile_multilib: "64",
+
+    srcs: [
+        "constants.c",
+    ],
+
+    cflags: [
+        "-Wall",
+        "-Wextra",
+        "-fvisibility=hidden",
+    ],
+
+    stl: "none",
+}

@@ -1,0 +1,35 @@
+// Copyright (C) The LineageOS Project
+
+// SPDX-License-Identifier: Apache-2.0
+
+cc_library_shared {
+    name: "libthermalclient",
+
+    vendor: true,
+    compile_multilib: "both",
+
+    srcs: [
+        "libthermalclient.c",
+    ],
+
+    cflags: [
+        "-Wall",
+        "-Wextra",
+
+
+
+
+
+
+
+
+
+        "-fsemantic-interposition",
+    ],
+
+    shared_libs: [
+        "liblog",
+    ],
+
+    stl: "none",
+}

@@ -1,0 +1,41 @@
+// Copyright (C) The LineageOS Project
+
+// SPDX-License-Identifier: Apache-2.0
+
+
+
+
+
+
+
+
+
+
+cc_library_shared {
+    name: "libmmosal",
+
+    vendor: true,
+    compile_multilib: "both",
+
+    srcs: [
+        "mmosal.c",
+    ],
+
+    cflags: [
+        "-Wall",
+        "-Wextra",
+        "-Wno-unused-parameter",
+
+
+
+
+        "-fsemantic-interposition",
+    ],
+
+    shared_libs: [
+        "liblog",
+        "libcutils",
+    ],
+
+    stl: "none",
+}

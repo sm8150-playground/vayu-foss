@@ -1,0 +1,40 @@
+// Copyright (C) The LineageOS Project
+
+// SPDX-License-Identifier: Apache-2.0
+
+cc_library_shared {
+    name: "libqcbor",
+
+    vendor: true,
+    compile_multilib: "64",
+
+    srcs: [
+
+
+
+
+        "src/UsefulBuf.c",
+        "src/qcbor_encode.c",
+        "src/qcbor_decode.c",
+    ],
+
+    local_include_dirs: [
+        "include",
+    ],
+
+    shared_libs: [
+        "libm",
+    ],
+
+    cflags: [
+        "-Wall",
+        "-Wextra",
+
+
+
+
+        "-fno-builtin-bcmp",
+    ],
+
+    stl: "none",
+}

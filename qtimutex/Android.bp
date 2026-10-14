@@ -1,0 +1,59 @@
+// Copyright (C) The LineageOS Project
+
+// SPDX-License-Identifier: Apache-2.0
+
+
+
+
+
+
+
+
+
+
+
+
+
+cc_library_shared {
+    name: "qtimutex",
+
+    vendor: true,
+    compile_multilib: "64",
+
+    srcs: [
+        "qtimutex.cpp",
+    ],
+
+    cflags: [
+        "-Wall",
+        "-Wextra",
+        "-fvisibility=hidden",
+        "-fvisibility-inlines-hidden",
+        "-fsemantic-interposition",
+    ],
+
+    cppflags: [
+        "-fno-exceptions",
+        "-fno-rtti",
+
+
+        "-D_LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_NONE",
+    ],
+
+    cpp_std: "gnu++17",
+
+    shared_libs: [
+        "libcutils",
+    ],
+
+
+
+
+
+
+    static_libs: [
+        "libcompiler_rt",
+    ],
+
+    stl: "libc++",
+}

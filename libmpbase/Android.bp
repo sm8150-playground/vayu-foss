@@ -1,0 +1,34 @@
+// Copyright (C) The LineageOS Project
+
+// SPDX-License-Identifier: Apache-2.0
+
+cc_library_shared {
+    name: "libmpbase",
+
+    vendor: true,
+    compile_multilib: "64",
+
+    srcs: [
+        "mpbase.c",
+    ],
+
+    local_include_dirs: [
+        "include",
+    ],
+
+    cflags: [
+        "-Wall",
+        "-Wextra",
+        "-fvisibility=hidden",
+
+
+
+
+
+
+
+        "-fno-semantic-interposition",
+    ],
+
+    stl: "none",
+}

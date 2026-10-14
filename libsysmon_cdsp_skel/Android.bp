@@ -1,0 +1,25 @@
+// Copyright (C) The LineageOS Project
+
+// SPDX-License-Identifier: Apache-2.0
+
+cc_library_shared {
+    name: "libsysmon_cdsp_skel",
+
+    vendor: true,
+
+    srcs: [
+        "libsysmon_cdsp_skel.c",
+    ],
+
+    shared_libs: [
+        "liblog",
+    ],
+
+    cflags: [
+        "-Wall",
+        "-Wextra",
+        "-fvisibility=hidden",
+    ],
+
+    stl: "none",
+}

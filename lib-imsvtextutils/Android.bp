@@ -1,0 +1,59 @@
+// Copyright (C) The LineageOS Project
+
+// SPDX-License-Identifier: Apache-2.0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+cc_library_shared {
+    name: "lib-imsvtextutils",
+
+    system_ext_specific: true,
+    compile_multilib: "64",
+
+    srcs: [
+        "lib-imsvtextutils.c",
+    ],
+
+    shared_libs: [
+        "liblog",
+        "libdiag_system",
+        "lib-imsvtutils",
+    ],
+
+    cflags: [
+        "-Wall",
+        "-Wextra",
+        "-fvisibility=hidden",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        "-mbranch-protection=bti",
+    ],
+
+    stl: "none",
+}

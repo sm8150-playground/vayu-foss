@@ -1,0 +1,45 @@
+// Copyright (C) The LineageOS Project
+
+// SPDX-License-Identifier: Apache-2.0
+
+
+
+
+
+
+
+
+
+
+cc_library_shared {
+    name: "libresampler",
+
+    vendor: true,
+    compile_multilib: "32",
+
+    srcs: [
+        "libresampler.c",
+    ],
+
+    shared_libs: [
+        "liblog",
+        "libm",
+    ],
+
+    cflags: [
+        "-Wall",
+        "-Wextra",
+        "-fvisibility=hidden",
+
+
+        "-mthumb",
+
+
+
+
+
+        "-ffp-contract=off",
+    ],
+
+    stl: "none",
+}
